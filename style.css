@@ -1088,6 +1088,10 @@ section p {
         max-width: 320px;
     }
 
+    .tarjeta h3 {
+        min-height: 0;
+    }
+
 
     /* ACCESO AL MENÚ */
 
