@@ -1,0 +1,1194 @@
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #171714;
+}
+
+body {
+    background-color: #171714;
+    color: #e9e1d2;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #eee6d6;
+}
+
+p,
+a,
+input,
+textarea,
+button {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 100%;
+    min-height: 70vh;
+    padding: 80px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 7, 5, 0.58),
+            rgba(5, 7, 5, 0.68)
+        ),
+        url("https://images.unsplash.com/photo-1745066113900-2dc0a449702b?auto=format&fit=crop&fm=jpg&q=80&w=2000");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #f3ead9;
+    margin: 8px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    color: #eee7da;
+}
+
+.hero-ubicacion {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin: 0 0 5px 0;
+    opacity: 0.9;
+}
+
+.hero-subtitulo {
+    font-size: 21px;
+    margin: 0 0 12px 0;
+}
+
+.hero-descripcion {
+    font-size: 16px;
+    max-width: 520px;
+    margin: 0 auto 20px auto !important;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.hero-detalle {
+    font-size: 13px !important;
+    letter-spacing: 1.5px;
+    margin: 22px 0 0 0 !important;
+    color: #f0e8d8 !important;
+    opacity: 0.95;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.boton {
+    display: inline-block;
+
+    background-color: #6f7958;
+    color: #fffdf7;
+
+    padding: 12px 26px;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #838d68;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BOTONES DEL HERO
+========================================= */
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.hero-botones .boton {
+    margin-top: 0;
+}
+
+.boton-menu {
+    background-color: transparent;
+
+    color: #eee6d6;
+
+    border: 1px solid rgba(166, 157, 133, 0.35);
+}
+
+.boton-menu:hover {
+    background-color: rgba(166, 157, 133, 0.10);
+
+    border-color: rgba(166, 157, 133, 0.55);
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+section {
+    width: 100%;
+
+    padding: 70px 20px;
+
+    margin: 0;
+
+    background-color: #171714;
+}
+
+section h2 {
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    color: #eee6d6;
+}
+
+section p {
+    max-width: 700px;
+
+    margin: 10px auto;
+
+    line-height: 1.7;
+
+    color: #d4ccbd;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 10px 0;
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 1000;
+
+    background-color: rgba(18, 21, 17, 0.90);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(166, 157, 133, 0.12);
+}
+
+.logo {
+    color: #eee6d6;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ded6c7;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b6bd91;
+}
+
+
+/* =========================================
+   NAVEGACIÓN DE LA PÁGINA DE MENÚ
+========================================= */
+
+.navbar-menu {
+    justify-content: center;
+
+    gap: 35px;
+}
+
+.navbar-menu .logo {
+    flex-shrink: 0;
+}
+
+.navbar-menu .nav-links-menu {
+    gap: 8px 16px;
+
+    max-width: 1000px;
+
+    align-items: center;
+}
+
+.navbar-menu .nav-links-menu a {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NUESTRA HISTORIA
+========================================= */
+
+.historia {
+    display: flex;
+
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 0;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 0;
+
+    background-color: #20231d;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.30);
+
+    border: 1px solid rgba(166, 157, 133, 0.10);
+}
+
+.historia-texto {
+    flex: 1;
+
+    text-align: left;
+
+    padding: 60px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.historia-etiqueta {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #b5bd8e;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+.historia-texto h2 {
+    font-size: 36px;
+
+    color: #eee6d6;
+
+    margin: 0 0 22px 0;
+
+    position: relative;
+
+    padding-bottom: 18px;
+}
+
+.historia-texto h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 1px;
+
+    background-color: #8c9470;
+
+    margin-top: 16px;
+}
+
+.historia-texto p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #d4ccbd;
+
+    margin: 0;
+}
+
+.historia-imagen {
+    flex: 1;
+
+    min-height: 400px;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0;
+
+    border-radius: 0;
+
+    filter: brightness(0.68);
+}
+
+
+/* =========================================
+   ESPECIALIDADES
+========================================= */
+
+.especialidades {
+    background-color: #171714;
+}
+
+.tarjetas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+}
+
+.tarjeta {
+    background-color: #20231d;
+
+    width: 280px;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+
+    border: 1px solid rgba(166, 157, 133, 0.10);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.40);
+
+    border-color: rgba(166, 157, 133, 0.22);
+}
+
+.tarjeta img {
+    width: calc(100% + 50px);
+
+    height: 190px;
+
+    object-fit: cover;
+
+    margin: -35px -25px 22px -25px;
+
+    display: block;
+
+    border-radius: 12px 12px 0 0;
+
+    filter: brightness(0.68);
+}
+
+.tarjeta h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+
+    color: #eee6d6;
+}
+
+.tarjeta p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #d0c8b9;
+}
+
+
+/* =========================================
+   ACCESO AL MENÚ COMPLETO
+========================================= */
+
+.menu-acceso {
+    text-align: center;
+
+    margin: 42px auto 0;
+
+    max-width: 650px;
+}
+
+.menu-acceso p {
+    margin: 0 0 16px 0;
+
+    color: #bdb5a6;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.menu-acceso .boton {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   TESTIMONIOS
+========================================= */
+
+.testimonios {
+    background-color: #171714;
+}
+
+.testimonio-tarjetas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+.testimonio {
+    background-color: #20231d;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.28);
+
+    border: 1px solid rgba(166, 157, 133, 0.10);
+}
+
+.testimonio p {
+    font-size: 17px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+
+    color: #d5cec1;
+}
+
+.testimonio h3 {
+    font-size: 16px;
+
+    margin-top: 20px;
+
+    color: #b5bd8e;
+}
+
+
+/* =========================================
+   UBICACIÓN
+========================================= */
+
+.ubicacion {
+    background-color: #171714;
+}
+
+.ubicacion-contenido {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    max-width: 1000px;
+
+    margin: 30px auto 0;
+}
+
+.ubicacion-contenido > div {
+    background-color: #20231d;
+
+    width: 250px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.28);
+
+    border: 1px solid rgba(166, 157, 133, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.ubicacion-contenido > div:hover {
+    transform: translateY(-7px) scale(1.02);
+
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.40);
+
+    border-color: rgba(166, 157, 133, 0.22);
+}
+
+.ubicacion-contenido h3 {
+    font-size: 20px;
+
+    color: #b5bd8e;
+}
+
+.ubicacion-contenido p {
+    font-size: 16px;
+
+    color: #d2cabc;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+
+    background-color: #0d0f0c;
+
+    color: #eee6d6;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(166, 157, 133, 0.10);
+}
+
+.footer h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+    color: #eee6d6;
+}
+
+.footer p {
+    margin: 8px 0;
+
+    color: #aaa59b;
+}
+
+
+/* =========================================
+   PÁGINA DE MENÚ COMPLETO
+========================================= */
+
+.menu-completo {
+    padding: 130px 20px 70px;
+
+    background-color: #171714;
+}
+
+
+/* =========================================
+   PORTADA DEL MENÚ
+========================================= */
+
+.menu-encabezado {
+    position: relative;
+
+    width: 100%;
+    max-width: 1100px;
+
+    min-height: 460px;
+
+    margin: 0 auto 70px;
+
+    padding: 90px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background-image:
+        linear-gradient(
+            rgba(7, 9, 7, 0.68),
+            rgba(7, 9, 7, 0.80)
+        ),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+
+    background-size: cover;
+
+    background-position: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.38);
+
+    border: 1px solid rgba(166, 157, 133, 0.12);
+}
+
+
+/* Brillo muy sutil en el centro */
+
+.menu-encabezado::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(190, 180, 150, 0.08),
+            transparent 62%
+        );
+
+    pointer-events: none;
+}
+
+
+/* El texto queda encima de la imagen */
+
+.menu-encabezado > * {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   TEXTO DE LA PORTADA
+========================================= */
+
+.menu-ubicacion {
+    margin: 0 0 14px 0;
+
+    color: #c0c79a;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.95;
+}
+
+.menu-encabezado h1 {
+    margin: 0 0 10px 0;
+
+    font-size: 52px;
+
+    color: #f3ead9;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 3px 18px rgba(0, 0, 0, 0.70);
+}
+
+.menu-subtitulo {
+    margin: 0;
+
+    color: #eee7da;
+
+    font-size: 20px;
+
+    text-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.70);
+}
+
+.menu-titulo {
+    margin: 25px 0 0 0;
+
+    color: #c0c79a;
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    font-weight: 600;
+
+    text-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.80);
+}
+
+
+/* =========================================
+   CONTENIDO DEL MENÚ
+========================================= */
+
+.menu-completo-contenido {
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+.menu-categoria {
+    padding: 0;
+
+    margin: 0 0 55px 0;
+
+    background-color: transparent;
+
+    scroll-margin-top: 110px;
+}
+
+.menu-categoria h2 {
+    margin: 0 0 25px 0;
+
+    padding-bottom: 14px;
+
+    border-bottom:
+        1px solid rgba(166, 157, 133, 0.16);
+
+    color: #c0c79a;
+
+    font-size: 28px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-align: left;
+}
+
+.menu-items {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 0 45px;
+}
+
+.menu-item {
+    padding: 0 0 22px 0;
+
+    margin-bottom: 22px;
+
+    border-bottom:
+        1px solid rgba(166, 157, 133, 0.10);
+}
+
+.menu-item-cabecera {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 20px;
+}
+
+.menu-item h3 {
+    margin: 0;
+
+    color: #eee6d6;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.menu-item-cabecera span {
+    flex-shrink: 0;
+
+    color: #c0c79a;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+.menu-item p {
+    max-width: none;
+
+    margin: 7px 0 0 0;
+
+    color: #bdb5a6;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   ADAPTACIÓN PARA CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* NAVEGACIÓN GENERAL */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 12px 0;
+    }
+
+    .nav-links {
+        gap: 8px 14px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        max-width: 360px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* NAVEGACIÓN DEL MENÚ */
+
+    .navbar-menu {
+        align-items: stretch;
+
+        gap: 8px;
+
+        padding-bottom: 10px;
+    }
+
+    .navbar-menu .logo {
+        text-align: center;
+    }
+
+    .navbar-menu .nav-links-menu {
+        width: 100%;
+
+        max-width: none;
+
+        flex-wrap: nowrap;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        padding: 0 15px 4px;
+
+        gap: 16px;
+
+        scrollbar-width: none;
+    }
+
+    .navbar-menu .nav-links-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar-menu .nav-links-menu a {
+        flex-shrink: 0;
+
+        white-space: nowrap;
+
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 65vh;
+
+        padding: 100px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-subtitulo {
+        font-size: 18px;
+    }
+
+    .hero-descripcion {
+        font-size: 16px;
+    }
+
+
+    /* BOTONES DEL HERO */
+
+    .hero-botones {
+        width: 100%;
+
+        max-width: 340px;
+
+        gap: 10px;
+    }
+
+    .hero-botones .boton {
+        width: 100%;
+    }
+
+
+    /* NUESTRA HISTORIA */
+
+    .historia {
+        flex-direction: column;
+
+        gap: 0;
+
+        margin: 20px auto;
+    }
+
+    .historia-texto {
+        text-align: center;
+
+        padding: 40px 25px;
+    }
+
+    .historia-etiqueta {
+        font-size: 11px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .historia-texto h2 {
+        font-size: 30px;
+    }
+
+    .historia-texto h2::after {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .historia-texto p {
+        font-size: 16px;
+    }
+
+    .historia-imagen {
+        min-height: 280px;
+    }
+
+    .historia-imagen img {
+        height: 280px;
+    }
+
+
+    /* TARJETAS */
+
+    .tarjeta,
+    .testimonio,
+    .ubicacion-contenido > div {
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+
+    /* ACCESO AL MENÚ */
+
+    .menu-acceso {
+        margin-top: 32px;
+    }
+
+    .menu-acceso p {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    /* SECCIONES */
+
+    section {
+        padding: 50px 15px;
+    }
+
+    section h2 {
+        font-size: 29px;
+    }
+
+
+    /* PORTADA DEL MENÚ */
+
+    .menu-completo {
+        padding: 125px 20px 50px;
+    }
+
+    .menu-encabezado {
+        min-height: 400px;
+
+        margin-bottom: 50px;
+
+        padding: 80px 20px;
+
+        border-radius: 10px;
+
+        background-position: center;
+    }
+
+    .menu-ubicacion {
+        font-size: 11px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .menu-encabezado h1 {
+        font-size: 40px;
+    }
+
+    .menu-subtitulo {
+        font-size: 17px;
+
+        max-width: 320px;
+    }
+
+    .menu-titulo {
+        font-size: 12px;
+
+        letter-spacing: 4px;
+    }
+
+
+    /* CONTENIDO DEL MENÚ */
+
+    .menu-items {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .menu-categoria {
+        margin-bottom: 45px;
+
+        scroll-margin-top: 125px;
+    }
+
+    .menu-categoria h2 {
+        font-size: 24px;
+
+        text-align: center;
+    }
+
+    .menu-item-cabecera {
+        gap: 12px;
+    }
+
+    .menu-item h3 {
+        font-size: 17px;
+    }
+
+    .menu-item-cabecera span {
+        font-size: 14px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+}
